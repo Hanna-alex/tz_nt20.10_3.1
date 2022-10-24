@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="route">
+        <label for="route">Выберите маршрут:</label>
+        <select name="route" id="route">
+          <option value=""></option>
+          <option value="из A в B">из A в B</option>
+          <option value="из B в A">из B в A</option>
+          <option value="из A в B и обратно в А">из A в B и обратно в А</option>
+        </select>
+      </div>
+      <!-- /.route -->
+
+      <div class="time-block">
+        <div class="time-block__group">
+          <label for="time">Выберите время:</label>
+          <select class="time-container" name="time" id="time"></select>
+        </div>
+        <!-- /.time-block__group -->
+
+        <div class="time-block__group-back hidden">
+          <label for="time">Во сколько обратно:</label>
+          <select class="time-container" name="time" id="time-back"></select>
+        </div>
+        <!-- /.time-block__group -->
+      </div>
+      <!-- /.time-block -->
+
+      <div class="ticket hidden">
+        <label for="num">Количество билетов:</label>
+        <input id="num" />
+      </div>
+      <!-- /.ticket -->
+      <button>Посчитать</button>
+
+      <div class="result"></div>
+      <!-- /.result -->
+    </div>
+    <!-- /.wrapper -->
+  </body>
+</html>
