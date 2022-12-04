@@ -1,1 +1,1 @@
-# tz_nt20.10_3.1
+# ticket price calculation (ТЗ)
